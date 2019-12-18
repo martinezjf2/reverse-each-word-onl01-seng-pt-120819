@@ -2,10 +2,16 @@
 
 
 
-def reverse_each_word(sentence1)
-
-  sentence1.reverse.each do |word|
+# def reverse_each_word(sentence1)
+#   sentence1.split do |word|
     
-    return sentence1.reverse
-  end
-end
+# end
+# end
+
+
+def reverse_each_word(sentence1) 
+  sentence1.split(" ").collect do |word| 
+    word.reverse 
+    end
+    .join(" ") 
+    end
