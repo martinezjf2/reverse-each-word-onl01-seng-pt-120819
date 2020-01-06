@@ -10,8 +10,9 @@ require "pry"
 
 
 def reverse_each_word(sentence1)
-  binding.pry
+
   sentence1.split(" ").collect do |word| 
+    binding.pry
     word.reverse
     end
     .join(" ")
